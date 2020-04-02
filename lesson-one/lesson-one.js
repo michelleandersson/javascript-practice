@@ -37,14 +37,10 @@ console.log(`You have ${us*eur} Euros`); */
 
 //5. A user types in the values of a and b for the formula a * x + b = 0 . The program has to calculate the x and display it in the console.
 
-let a = prompt('Please provide a value for a');
+/*let a = prompt('Please provide a value for a');
 let b = prompt('Please provide a value for b');
-let x1 = parse("a * x - b"); 
-let x2 = parse("0"); 
-let eq = new Equation(x1,x2); 
-let answer = eq.solveFor("x"); 
 
-console.log("The value for X in the equation a*x+b=0 is:" + answer.toString()); 
+console.log(`The value for X in the equation a*x+b=0 is: ${-b/a}`); */
 
 
 
