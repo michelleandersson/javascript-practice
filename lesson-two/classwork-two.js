@@ -47,7 +47,7 @@ if (num ==0) {
 /*3. Ask a user 3 questions, each with 3 answer options. Write these options also in the prompt window, after a question. 
 The user gets 2 points for each correct answer. Show the earned points after the test.*/
  
-let first = prompt("What is 2+2? a:1, b:4, c:6"); 
+/*let first = prompt("What is 2+2? a:1, b:4, c:6"); 
 let second = prompt("What is blue+yellow? d:red, e:purple, f:green"); 
 let third = prompt("What is 1+1? g:2, h:5, i:6"); 
 let points = 0; 
@@ -62,10 +62,7 @@ if (third == "g") {
     points = points + 2; 
 }
 
-console.log (`Your Score is: ${points}`); 
-
-
-    
+console.log (`Your Score is: ${points}`); */
 
 
 
@@ -92,3 +89,81 @@ if (age >0 && age <120) {
     }else {
         alert ("Hm...Is it even possible?");
     }*/
+
+
+/*One task to do using switch:
+Request a number of a month from a user. Print the name of the month to the webpage as a paragraph using document.write().*/
+
+/*let month = prompt("Please provide the number of a month.");
+
+switch(month) {
+    case '1': 
+    document.write("<p>January</p>"); 
+    break; 
+    case '2': 
+    document.write("<p>February</p>"); 
+    break; 
+    case '3': 
+    document.write("<p>March</p>"); 
+    break; 
+    case '4': 
+    document.write("<p>April</p>"); 
+    break; 
+    case '5': 
+    document.write("<p>May</p>"); 
+    break; 
+    case '6': 
+    document.write("<p>June</p>"); 
+    break; 
+    case '7': 
+    document.write("<p>July</p>"); 
+    break; 
+    case '8': 
+    document.write("<p>August</p>"); 
+    break; 
+    case '9': 
+    document.write("<p>September</p>"); 
+    break; 
+    case '10': 
+    document.write("<p>October</p>"); 
+    break; 
+    case '11': 
+    document.write("<p>November</p>"); 
+    break; 
+    case '12': 
+    document.write("<p>December</p>"); 
+    break; 
+}*/
+
+/*One task using while loop: 
+Request a number and an extent. Raise the number to the given power and display the result. Do not use ** or Math.pow() here.*/
+
+let number = prompt("Please provide a number");
+let extent = prompt("Please provide an extent");
+let sum = number**extent; 
+
+while (sum >0) {
+    number++; 
+}
+console.log(sum); 
+
+/*One task using do while loop: 
+Suggest a user solve 2 + 2 * 2 until he/she does it right.*/
+
+/*let answer = prompt("Solve for 2+2*2");
+do {
+
+} while (answer !== 8); 
+
+console.log("You did it!");*/
+
+
+/*And one task using for loop:
+Count sheep. Request a non-negative integer, 3 for example, and print a string with a murmur: “1 sheep...2 sheep...3 sheep...” 
+to the page using document.write(). If a user types a negative number in, alert an error.*/
+
+/*let sheep = prompt("Please provide a number of sheep");
+
+for (i= 0; i<= sheep; i++) {
+    document.write(`<p> ${i} sheep...</p>`); 
+}*/
