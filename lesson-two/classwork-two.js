@@ -138,24 +138,24 @@ switch(month) {
 /*One task using while loop: 
 Request a number and an extent. Raise the number to the given power and display the result. Do not use ** or Math.pow() here.*/
 
-let number = prompt("Please provide a number");
+/*let number = prompt("Please provide a number");
 let extent = prompt("Please provide an extent");
 let sum = number**extent; 
 
 while (sum >0) {
     number++; 
 }
-console.log(sum); 
+console.log(sum); */
 
 /*One task using do while loop: 
 Suggest a user solve 2 + 2 * 2 until he/she does it right.*/
 
-/*let answer = prompt("Solve for 2+2*2");
+let answer; 
 do {
+    answer = prompt("Solve for 2+2*2");
+} while (answer != 8); 
 
-} while (answer !== 8); 
-
-console.log("You did it!");*/
+console.log("You did it!");
 
 
 /*And one task using for loop:
