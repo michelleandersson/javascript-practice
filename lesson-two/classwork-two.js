@@ -138,14 +138,25 @@ switch(month) {
 /*One task using while loop: NOT SOLVED!!!
 Request a number and an extent. Raise the number to the given power and display the result. Do not use ** or Math.pow() here.*/
 
-/*let number = prompt("Please provide a number");
-let extent = prompt("Please provide an extent");
-let sum;  
+/*let number = Number(prompt("Please provide a number"));
+let extent = Number(prompt("Please provide an extent"));
+let total = 1;   
+let i = 0; 
 
-while (number >=0, extent >=0 ) {
-    sum = number*extent; 
+while (i<extent) {
+    i++; 
+    total = total * number; 
+
 }
-console.log(sum); */
+console.log(`${number} to the power of ${extent} is equal to ${total}`); */
+
+
+/*let factorial = prompt("Please provide a number"); 
+let total = 1;
+for (let i = 1; i <=factorial; i++) {
+  total = total * i;
+}
+console.log(factorial + ' ' + total);*/
 
 /*One task using do while loop: 
 Suggest a user solve 2 + 2 * 2 until he/she does it right.*/

@@ -33,11 +33,16 @@ console.log(factorial + '! = ' + total);*/
 /*3. Count sheep. Request a non-negative integer, 3 for example, and print a string with a murmur: "1 sheep...2 sheep...3 sheep..." to the 
 page as a paragraph. If a user types a negative number in, alert an error.*/
 
-/*let sheep = prompt("Please provide a number of sheep");
+/*let sheep = parseInt(prompt("Please provide a number of sheep"));
 
 for (i= 0; i<= sheep; i++) {
-    document.write(`<p> ${i} sheep...</p>`); 
-} ADD NEGATIVE ERROR*/ 
+    if (sheep<"0") {
+    alert("Now you\'re counting imaginary sheep! Please provide a positive number!"); //THIS IS NOT WORKING CORRECTLY! 
+    
+    } else {
+        document.write(`<p> ${i} sheep...</p>`);   
+    }
+}*/
 
 
 /*4. Show a user the prompt where they have to write a correct answer for 2 + 2 * 2. Show the prompt as many times until the user 
