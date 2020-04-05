@@ -135,7 +135,7 @@ switch(month) {
     break; 
 }*/
 
-/*One task using while loop: NOT SOLVED!!!
+/*One task using while loop: 
 Request a number and an extent. Raise the number to the given power and display the result. Do not use ** or Math.pow() here.*/
 
 /*let number = Number(prompt("Please provide a number"));
@@ -150,13 +150,6 @@ while (i<extent) {
 }
 console.log(`${number} to the power of ${extent} is equal to ${total}`); */
 
-
-/*let factorial = prompt("Please provide a number"); 
-let total = 1;
-for (let i = 1; i <=factorial; i++) {
-  total = total * i;
-}
-console.log(factorial + ' ' + total);*/
 
 /*One task using do while loop: 
 Suggest a user solve 2 + 2 * 2 until he/she does it right.*/
@@ -175,6 +168,12 @@ to the page using document.write(). If a user types a negative number in, alert 
 
 /*let sheep = prompt("Please provide a number of sheep");
 
-for (i= 0; i<= sheep; i++) {
-    document.write(`<p> ${i} sheep...</p>`); 
-}*/
+for (i= 1; i<= sheep; i++) {
+    document.write(`<p> ${i} sheep...</p>`);    
+}
+
+if (sheep <= 0) {
+    alert("Now you\'re counting imaginary sheep! Please provide a positive number!"); 
+    } else {
+  
+    }*/
