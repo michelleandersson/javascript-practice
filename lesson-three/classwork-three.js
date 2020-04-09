@@ -2,13 +2,22 @@
 argument.*/
 
 /*
-let name = prompt("What is your name?"); 
+function detectDataType(value) {
+    let dTypes = [Function, RegExp, Number, String, Boolean, Object], x, len; 
 
-function greet(name) {
-    alert(`Hello ${name}!`); 
+    if(typeof value === "object" ||  typeof value === "function") {
+        for (x = 0, len = dTypes.length; x < len; x++) {
+            if (value instanceof dTypes[x]) {
+                return dTypes[x]; 
+            }
+        }
+    }
+    return typeof value; 
 }
 
-greet(name); 
+console.log(detectDataType(12)); 
+console.log(detectDataType('Hello World')); 
+console.log(detectDataType(false)); 
 */
 
 
@@ -18,57 +27,49 @@ greet(name);
 /*
 function numbers(x, y) {
     if (x>y) {
-    console.log(`${x} is larger!`);
+        return `${x} is larger`; 
     } else if (x<y) {
-        console.log(`${y} is larger!`);
-    } else {
-        console.log("They are the same!")
+        return `${y} is larger`; 
+    } else if (x===y) {
+        return "Numbers are the same"
     }
 }
 
-numbers(8, 8); 
+console.log(numbers(8, 10)); 
 */
+
 
 /*3. Write a function that show how old a dog in human years, it should take 
 one argument - puppy’s age. 1 human year is 7 dog years. The function should 
 return a string like “Your doggie is NN years old in dog years!”*/
 
 /*
-let age = prompt("How old is your puppy?"); 
-
 function puppyAge(age) {
      let humanYears = age * 7;
-    console.log(`Your puppy is ${humanYears} old!`);  
+    return humanYears; 
 }
-
-puppyAge(age); 
+ 
+console.log(`Your puppy is ${puppyAge(10)} dog years old`);
 */
 
 
 /*4. Write a function that accepts a string as a parameter and counts the number 
 of vowels within the string.*/ 
 
-/* NOT SOLVED! 
-function message(){
-    let message = prompt("Write a message");
-    let vowels = 0;
-
-    for (let i = 0; i < message.length; i++) {
-    if (message[i] == 'a') {
-        vowels += 1;
-    } else if (message[i] == 'e') {
-        vowels += 1;
-    } else if (message[i] == 'i') {
-        vowels += 1;
-    } else if (message[i] == 'o') {
-        vowels += 1;
-    } else if (message[i] === 'u') {
-        vowels += 1;
+/* 
+function vowelCount(string) {
+    let vowelList = 'aeiouAEIOU'; 
+    let vowels = 0; 
+    
+    for (let i = 0; i<string.length; i++) {
+        if (vowelList.indexOf(string[i]) !== -1) {
+            vowels +=1; 
+        }
     }
-    }
-    console.log(`There are ${vowels} vowels in your message`); 
+    return vowels; 
 }
-message(); 
+
+console.log(vowelCount("Hello World")); 
 */
 
 
@@ -78,31 +79,21 @@ function.*/
 /*1. Write a function that accepts a string as a parameter and counts the number 
 of vowels within the string.*/
 
-/* NOT SOLVED!
-function countingVowels(string){
-    let message = 'Hello World';
-    let vowels = 0;
-
-    for (let i = 0; i < message.length; i++) {
-    if (message[i] == 'a') {
-        vowels += 1;
-    } else if (message[i] == 'e') {
-        vowels += 1;
-    } else if (message[i] == 'i') {
-        vowels += 1;
-    } else if (message[i] == 'o') {
-        vowels += 1;
-    } else if (message[i] === 'u') {
-        vowels += 1;
+ /* 
+function vowelCount(string) {
+    let vowelList = 'aeiouAEIOU'; 
+    let vowels = 0; 
+    
+    for (let i = 0; i<string.length; i++) {
+        if (vowelList.indexOf(string[i]) !== -1) {
+            vowels +=1; 
+        }
     }
-    }
-    return i; 
+    return vowels; 
 }
 
-countingVowels(); 
-console.log(`There are ${vowels} vowels in your message`); 
+console.log(vowelCount("Hello World")); 
 */
-
 
 
 /*2. Write a function that accepts hours, minutes, and seconds and returns
@@ -126,16 +117,16 @@ The function has to count the number of occurrences of the specified character
 within the string. For example, there are 2 occurrences of a character “o” in the 
 string “Hello world”.*/
 
-/* NOT SOLVED! 
-function occurences(x, y) {
-    let times = 0; 
-    for (let i = 0; i<y; i++) {
-        x[i]== y; 
-        times +=1; 
+/*
+function characterCount(string, letter) {
+    let letterCount = 0; 
+    for (let i = 0; i < string.length; i++ ) {
+        if (string.charAt(i) == letter) {
+            letterCount +=1; 
+        }
     }
-    return times; 
+    return letterCount; 
 }
 
-let message = ocurences(string('hello'),string('o')); 
-console.log(`${message}`); 
-*/ 
+console.log(characterCount('Hello everyone out there!', 'e')); 
+*/
