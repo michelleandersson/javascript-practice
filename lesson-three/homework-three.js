@@ -19,7 +19,19 @@ string and returns a new string with all vowels removed. For example,
 
 
 
+
+
 /*3. Write a function which repeats the given string exact number of times. 
 For example, repeatString("Hello", 5) returns “HelloHelloHelloHelloHello”.*/
+
+/*
+function repeat (string, count) {
+    if (typeof(count)== "undefined") {
+        count = 1; 
+    }
+    return count <1 ? '': new Array (count + 1).join(string); 
+}
+console.log(repeat('Hello World!', 5)); 
+*/
 
 
