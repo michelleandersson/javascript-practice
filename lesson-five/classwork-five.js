@@ -94,7 +94,7 @@ like this:
   }
 ]*/
 
-/* NOT SOLVED!!!! 
+/*
 let keyValueArray = [
     {
       key: 'name',
@@ -110,8 +110,10 @@ let keyValueArray = [
     }
   ];
 
-let reformattedArray = keyValueArray.map(function(item) {
-    return item;
+let reformattedArray = keyValueArray.map(function(object) {
+    let newObject = {};
+    newObject[object.key] = object.value;
+    return newObject
 });
 console.log(keyValueArray); 
 console.log(reformattedArray);
@@ -158,4 +160,16 @@ accepts an object and returns the string “Your full
 name is NAME LASTNAME”. Use object destructuring to
  create “name” and “lastname” variables.*/
 
-  
+ /*
+let student = {
+  name: 'Alex',
+  lastname: 'Wood'
+}; 
+
+function displayStudentInfo(student) {
+  let {name, lastname} = student; 
+  return `Your full name is ${name} ${lastname}`;
+}; 
+
+console.log(displayStudentInfo(student)); 
+*/
