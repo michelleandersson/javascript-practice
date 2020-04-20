@@ -30,12 +30,74 @@ let shoppingList = [
     }
 ]; 
 
-/* 
+
+const shoppingList = [
+    {
+        name: 'apples', 
+        amount: 2, 
+        isBought: false
+    },
+    {
+        name: 'eggs', 
+        amount: 6, 
+        isBought: true
+    },
+    {
+        name: 'potatoes', 
+        amount: 4, 
+        isBought: false
+    }
+  ];
+  
+  function displayList() {
+    for (let i = 0; i< shoppingList.length; i++)
+    console.log(shoppingList[i].name); 
+  }; 
+  displayList(); 
+  
+  //array.map
+  
+  function addItem(item, itemCount, isBought=false){
+    //if (array.includes(value) === false) array.push(value);
+    //if name exsists, add amount to itemcount
+    //else add new item 
+    for (let i = 0; i<shoppingList.length; i++)
+    shoppingList[i].name.includes('apples'); 
+  
+    return shoppingList.push({name:item, amount:itemCount});
+  }; 
+  addItem('bananas', 3);
+  addItem('raspberry',5);  
+  addItem('raspberry',5); 
+  displayList(); 
+  
+  //const arr = [{name:'foo', number: 10}]; 
+  //for (let i = 0; i<shoppingList.length; i++)
+  //console.log(shoppingList[i].name.includes('apples')); 
+  //index of object that includes finds 
+  //return array index and add quantity
+  
+  const purchase = name => {
+    const idx = shoppingList.findIndex(el => el.name === name);
+    return shoppingList[idx].isBought = true; 
+  }; 
+  
+  purchase('apples');
+  console.log(shoppingList);  
+  
+  
+  const idx = shoppingList.findIndex(el => el.name === 'apples');
+  console.log(idx); 
+  
+  let obj = {name:'hi', number: 5}; 
+  obj.name='bye'; 
+  console.log(obj); 
+
 function displayList() {
     console.log(shoppingList); 
 }; 
 displayList(); 
-*/
+
 
 /* UNSURE HOW TO MAKE IT ADD IF THE PRODUCT ALREADY EXISTS IN THE LIST
 
@@ -63,6 +125,13 @@ shoppingList.forEach(function(status){
     };
 }); 
 */
+
+let hasBought = prompt("what have you bought?"); 
+
+function purchase () {
+
+
+}
 
 
 
