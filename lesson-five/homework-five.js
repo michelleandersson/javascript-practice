@@ -30,14 +30,15 @@ let shoppingList = [
     }
 ]; 
 
-/* UNSURE HOW TO MAKE IT ADD IF THE PRODUCT ALREADY EXISTS IN THE LIST
+/* 
 function displayList() {
     console.log(shoppingList); 
 }; 
 displayList(); 
 */
 
-/*
+/* UNSURE HOW TO MAKE IT ADD IF THE PRODUCT ALREADY EXISTS IN THE LIST
+
 let newName = prompt("What do you need to purchase?"); 
 let newAmount = prompt("How many do you need?");  
 
@@ -52,18 +53,17 @@ shoppingList.push(
 console.log(shoppingList); 
 */
 
-/* NOT SOLVED! 
-function listStatus() {
-    if (isBought === true) {
-        console.log (`You have bought ${shoppingList.amount} of ${shoppingList.name}!`); 
-    } else {
-        console.log(`You still need to buy ${shoppingList.amount} of ${shoppingList.name}`); 
-    };
-}; 
+/*I DON'T THINK THIS IS RIGHT....UNSURE HOW TO PROCEED
 
-listStatus(); 
-console.log(listStatus(shoppingList)); 
+shoppingList.forEach(function(status){
+    if (status.isBought === true) {
+        console.log (`You have bought ${status.amount} of ${status.name}!`); 
+    } else {
+        console.log(`You still need to buy ${status.amount} of ${status.name}`); 
+    };
+}); 
 */
+
 
 
 
@@ -108,7 +108,7 @@ function displayList() {
 displayList(); 
 */
 
-/*NOT SOLVED!
+/*NOT SURE HOW TO PROCEED
 let newClassroom = classroom.filter(function(faculty){
     if (classroom.faculty = 'Mr. Peck'){
         console.log(`Miss day has the classrooms ${classroom.name}`);
@@ -118,5 +118,5 @@ let newClassroom = classroom.filter(function(faculty){
 console.log(newClassroom); 
 */
 
-/*NOT SOLVED
+/*NOT SURE HOW TO PROCEED WITH THE LAST ONE
 */
