@@ -12,25 +12,6 @@ purchase, not in a new one;
 accepts the name of a product and marks it as bought.*/
 
 
-let shoppingList = [
-    {
-        name: 'apples', 
-        amount: 2, 
-        isBought: false
-    },
-    {
-        name: 'eggs', 
-        amount: 6, 
-        isBought: true
-    },
-    {
-        name: 'potatoes', 
-        amount: 4, 
-        isBought: false
-    }
-]; 
-
-
 const shoppingList = [
     {
         name: 'apples', 
@@ -48,90 +29,51 @@ const shoppingList = [
         isBought: false
     }
   ];
-  
-  function displayList() {
-    for (let i = 0; i< shoppingList.length; i++)
-    console.log(shoppingList[i].name); 
-  }; 
-  displayList(); 
-  
-  //array.map
-  
-  function addItem(item, itemCount, isBought=false){
-    //if (array.includes(value) === false) array.push(value);
-    //if name exsists, add amount to itemcount
-    //else add new item 
-    for (let i = 0; i<shoppingList.length; i++)
-    shoppingList[i].name.includes('apples'); 
-  
-    return shoppingList.push({name:item, amount:itemCount});
-  }; 
-  addItem('bananas', 3);
-  addItem('raspberry',5);  
-  addItem('raspberry',5); 
-  displayList(); 
-  
-  //const arr = [{name:'foo', number: 10}]; 
-  //for (let i = 0; i<shoppingList.length; i++)
-  //console.log(shoppingList[i].name.includes('apples')); 
-  //index of object that includes finds 
-  //return array index and add quantity
-  
-  const purchase = name => {
-    const idx = shoppingList.findIndex(el => el.name === name);
-    return shoppingList[idx].isBought = true; 
-  }; 
-  
-  purchase('apples');
-  console.log(shoppingList);  
-  
-  
-  const idx = shoppingList.findIndex(el => el.name === 'apples');
-  console.log(idx); 
-  
-  let obj = {name:'hi', number: 5}; 
-  obj.name='bye'; 
-  console.log(obj); 
+
 
 function displayList() {
-    console.log(shoppingList); 
+    for (let i = 0; i< shoppingList.length; i++)
+    console.log(shoppingList[i].name); 
 }; 
+
 displayList(); 
 
+  
 
-/* UNSURE HOW TO MAKE IT ADD IF THE PRODUCT ALREADY EXISTS IN THE LIST
-
-let newName = prompt("What do you need to purchase?"); 
-let newAmount = prompt("How many do you need?");  
-
-shoppingList.push(
-    {
-        name: newName,
-        amount: newAmount,
-        isBought: false 
-    }
-); 
-
-console.log(shoppingList); 
-*/
-
-/*I DON'T THINK THIS IS RIGHT....UNSURE HOW TO PROCEED
-
-shoppingList.forEach(function(status){
-    if (status.isBought === true) {
-        console.log (`You have bought ${status.amount} of ${status.name}!`); 
+/*  THIS IS NOT WORKING CORRECTLY, BUT I DON'T KNOW HOWTO MAKE IT WORK :(
+function addItem(item, itemCount, isBought=false){
+//if (array.includes(value) === false) array.push(value);
+//if name exsists, add amount to itemcount
+//else add new item 
+for (let i = 0; i<shoppingList.length; i++)
+    shoppingList[i].name.includes('raspberry'); 
+    if(shoppingList[i].name===true){
+    return shoppingList[i].amount = amount+itemCount; 
     } else {
-        console.log(`You still need to buy ${status.amount} of ${status.name}`); 
-    };
-}); 
+        return shoppingList.push({name:item, amount:itemCount});
+    } 
+};  
+
+addItem('bananas', 3);
+addItem('raspberry',5);  
+addItem('raspberry',5); 
+displayList(); 
 */
+  
+  
+const purchase = name => {
+    const idx = shoppingList.findIndex(el => el.name === name);
+    return shoppingList[idx].isBought = true; 
+}; 
+  
+purchase('apples');
+console.log(shoppingList);  
+ 
 
-let hasBought = prompt("what have you bought?"); 
-
-function purchase () {
 
 
-}
+
+
 
 
 
