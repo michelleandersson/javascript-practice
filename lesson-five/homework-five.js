@@ -30,17 +30,19 @@ const shoppingList = [
     }
   ];
 
-
+/*
 function displayList() {
     for (let i = 0; i< shoppingList.length; i++)
     console.log(shoppingList[i].name); 
 }; 
 
 displayList(); 
+*/
 
   
 
 /*  THIS IS NOT WORKING CORRECTLY, BUT I DON'T KNOW HOWTO MAKE IT WORK :(
+
 function addItem(item, itemCount, isBought=false){
 //if (array.includes(value) === false) array.push(value);
 //if name exsists, add amount to itemcount
@@ -60,23 +62,16 @@ addItem('raspberry',5);
 displayList(); 
 */
   
-  
+/*  
 const purchase = name => {
     const idx = shoppingList.findIndex(el => el.name === name);
     return shoppingList[idx].isBought = true; 
 }; 
   
 purchase('apples');
-console.log(shoppingList);  
+console.log(shoppingList); 
+*/
  
-
-
-
-
-
-
-
-
 
 
 /*2. Create an array of classrooms. A classroom 
@@ -89,7 +84,7 @@ Write a few functions for working with it:
 given group. A group object contains a name, 
 the number of students, and the faculty name.*/
 
-let classroom = [
+const classroom = [
     {
         name: 'Sunshine', 
         seats: 15, 
@@ -114,20 +109,19 @@ let classroom = [
 
 /*
 function displayList() {
-    console.log(classroom); 
+    for (let i = 0; i< classroom.length; i++)
+    console.log(classroom[i].name); 
 }; 
-displayList(); 
+
+displayList();
 */
 
-/*NOT SURE HOW TO PROCEED
-let newClassroom = classroom.filter(function(faculty){
-    if (classroom.faculty = 'Mr. Peck'){
-        console.log(`Miss day has the classrooms ${classroom.name}`);
-    }
-}); 
- 
-console.log(newClassroom); 
-*/
-
-/*NOT SURE HOW TO PROCEED WITH THE LAST ONE
+/*
+let facultyClassroom = [];
+for (let i = 0; i < classroom.length; i++) {
+  if (classroom[i].faculty === "Miss Day") {
+    facultyClassroom.push(classroom[i].name);
+  }
+}
+console.log(facultyClassroom); 
 */
