@@ -16,12 +16,18 @@ class Marker {
         this.message = message; 
     }
     printMessage(){
-        document.write(`<p style = "color: ${this.color};"> ${this.message}</p>`); 
-    }
+        let ink1 = parseInt(this.inkAmount, 10);
+        let inkSpeed = '0.5'
+        let ink2 = parseFloat(inkSpeed);  
+        let ink = ink1 * ink2; 
+     let messagePrintLength = this.message.substr(0,ink); 
+     document.write(`<p style = "color: ${this.color};"> ${messagePrintLength}</p>`); 
+    }   
 }; 
 
-let firstMessage = new Marker ('red', 50, "hello world"); 
+let firstMessage = new Marker ('red', 14, "hello world"); 
 firstMessage.printMessage(); 
+
 
 
 /*Create a class that describes a refillable marker.
@@ -34,8 +40,18 @@ class RefillMarker extends Marker {
         super(color, inkAmount, message); 
         this.inkRefill = inkRefill; 
     }
+    //I struggled to make it work with super PrintMessage, but at least this way it works....
     printMessage(){
-        let inkLeft = this.inkAmount + this.inkRefill; 
-        return inkLeft;  
+        let ink1 = parseInt(this.inkAmount, 10);
+        let inkSpeed = '0.5'
+        let ink2 = parseFloat(inkSpeed);  
+        let ink = ink1 * ink2; 
+        let ink3 = parseInt(this.inkRefill, 10); 
+        let newInk = ink + ink3; 
+     let messagePrintLength = this.message.substr(0,newInk); 
+     document.write(`<p style = "color: ${this.color};"> ${messagePrintLength}</p>`); 
     }
 };  
+
+let secondMessage = new RefillMarker ('green', 14, "this is a longer message", 12); 
+secondMessage.printMessage(); 
