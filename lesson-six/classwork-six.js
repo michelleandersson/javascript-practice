@@ -138,6 +138,7 @@ was less than a day ago, it is displayed as
 and otherwise it is shown as the full date format 
 dd:mm:yyyy.*/
 
+/*
 class Article {
     constructor(heading, description, tags, date){
         this.heading = heading; 
@@ -158,4 +159,5 @@ let firstArticle = new Article ('My Article', "A short article written by me.",
 ['article', 'me', 'first'], 2020-04-18); 
 
 console.log(firstArticle.printArticle()); 
+*/
  
