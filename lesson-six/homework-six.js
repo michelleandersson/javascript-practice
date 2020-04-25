@@ -26,7 +26,7 @@ class Marker {
 }; 
 
 let firstMessage = new Marker ('red', 14, "hello world"); 
-firstMessage.printMessage(); 
+//firstMessage.printMessage(); 
 
 
 
@@ -54,4 +54,4 @@ class RefillMarker extends Marker {
 };  
 
 let secondMessage = new RefillMarker ('green', 14, "this is a longer message", 12); 
-secondMessage.printMessage(); 
+//secondMessage.printMessage(); 
