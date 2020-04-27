@@ -1,0 +1,46 @@
+body{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url(music.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-attachment: fixed;
+    color: white;
+}
+
+#theMusicList {
+    max-width: 500px;
+    width: 100%;
+    min-height: 300px;
+    margin: 20px;
+    margin-top: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(6, 121, 136, 0.5);
+    border-radius: 5px;
+}
+
+button {
+    background-color: rgb(6, 121, 136);
+    border: none;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: rgb(99, 228, 245);
+    color: black;
+}
+
+li {
+    line-height: 1.5em;
+}
