@@ -1,15 +1,3 @@
-//title and text class 
-
-/*const text = document.querySelector('#text'); 
-
-function hideText(){
-    if (text.style.visibility === 'hidden'){
-        text.style.visibility = 'visible'; 
-    } else {
-        text.style.visibility = 'hidden'; 
-    }
-};*/
-
 $('.location-title').on('click', ()=> {
     $('.location-text').slideToggle(1000); 
 }); 
