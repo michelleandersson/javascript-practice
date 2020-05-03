@@ -36,16 +36,20 @@ list of tracks to the webpage using Document Object
     }
 ];
 
+
+
 function nextTrack(){
     let list = document.getElementById("listMusic"); 
     let li; 
     
+
     for (let i = 0; i<playList.length; i++){
         li = document.createElement("li"); 
         li.appendChild(document.createTextNode(`Author: ${playList[i].author} `));
         li.appendChild(document.createTextNode(`Song: ${playList[i].song} `)); 
         list.appendChild(li); 
     }
+    
 }; 
      
 
