@@ -51,5 +51,7 @@ function nextTrack(){
     }
     
 }; 
-     
+
+let button = document.getElementById('button');
+button.addEventListener('click', nextTrack, { once: true });
 
