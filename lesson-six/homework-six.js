@@ -15,18 +15,22 @@ class Marker {
         this.inkAmount = inkAmount; 
         this.message = message; 
     }
-    printMessage(){
-        let ink1 = parseInt(this.inkAmount, 10);
-        let inkSpeed = '0.5'
-        let ink2 = parseFloat(inkSpeed);  
-        let ink = ink1 * ink2; 
-     let messagePrintLength = this.message.substr(0,ink); 
-     document.write(`<p style = "color: ${this.color};"> ${messagePrintLength}</p>`); 
+    printMessage(text){
+        let newText = ''; 
+        for (let character of text) {
+            if (this.inkAmount ===0) break; 
+            
+            newText += character; 
+            if (character !== ' ') {
+                this.inkAmount -=0.5; 
+            }
+        }
+     document.write(`<p style = "color: ${this.color};"> ${newText}</p>`); 
     }   
 }; 
 
-let firstMessage = new Marker ('red', 14, "hello world"); 
-//firstMessage.printMessage(); 
+let marker = new Marker ('red', 5); 
+marker.printMessage('Hello World!'); 
 
 
 
@@ -40,18 +44,7 @@ class RefillMarker extends Marker {
         super(color, inkAmount, message); 
         this.inkRefill = inkRefill; 
     }
-    //I struggled to make it work with super PrintMessage, but at least this way it works....
-    printMessage(){
-        let ink1 = parseInt(this.inkAmount, 10);
-        let inkSpeed = '0.5'
-        let ink2 = parseFloat(inkSpeed);  
-        let ink = ink1 * ink2; 
-        let ink3 = parseInt(this.inkRefill, 10); 
-        let newInk = ink + ink3; 
-     let messagePrintLength = this.message.substr(0,newInk); 
-     document.write(`<p style = "color: ${this.color};"> ${messagePrintLength}</p>`); 
-    }
 };  
 
-let secondMessage = new RefillMarker ('green', 14, "this is a longer message", 12); 
-//secondMessage.printMessage(); 
+let secondMarker = new RefillMarker ('green', 14); 
+secondMarker.printMessage("this is a longer message"); 
