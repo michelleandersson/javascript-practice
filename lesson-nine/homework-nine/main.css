@@ -1,0 +1,23 @@
+body {
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    background-color: bisque;
+} 
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin: 20px;
+    padding: 20px;
+    background-color: rgb(162, 209, 204);
+    border-radius: 10px;
+}
+
+img {
+    border-radius: 5px;
+}
