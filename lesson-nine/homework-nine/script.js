@@ -1,8 +1,17 @@
-//HOW DO I GET THE SEARCH TO CLEAR AND NOT SHOW MULTIPLE MOVIES IN A ROW? 
+//HOW DO I GET THE SEARCH TO CLEAR AND NOT SHOW MULTIPLE MOVIES IN A ROW?
+//I HAVE TRIED USING THE .EMPTY CODE BELOW BUT IT RESULTS IN THAT THE NEXT
+//SEARCH DOES NOT SHOW UP..... :(  
+/*$('button').click(function(clear){
+    $('#container').empty(); 
+}); */
+
+
 
 $('form').submit(function(event) {
+    
     // Stop the form from submitting
     event.preventDefault();
+     
   
     // Get The value from the form
     var movieName = $('#search').val();
@@ -27,8 +36,11 @@ $('form').submit(function(event) {
 
       $('#movieInformation').append(movieData);
       $('#moviePoster').append(moviePoster);
-  
-    }; 
+      
+    };
+    
+    
     $.getJSON(movieURL, movieOptions, displayMovies);// end getJSON
   
   }); // end submit function
+

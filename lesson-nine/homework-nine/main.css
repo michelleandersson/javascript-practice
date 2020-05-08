@@ -7,7 +7,7 @@ body {
     background-color: bisque;
 } 
 
-.container {
+#container {
     display: flex;
     justify-content: center;
     align-items: center;
